@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --back-color: rgb(126, 126, 133);
+    --back-color-1: rgb(126, 126, 133);
+    --color-red: #f71414;
+    --color-yellow: #f1f100;
+    --color-green: #00f300;
+    --color-green-blue-1: #00f37a2a;
+    --color-green-blue-2: #00f3b6;
+    --color-green-blue-3: #00f35d;
+    --color-blue-light-1: #00ebf349;
+    --color-blue-light: #009af3;
+    --color-grey-light: #b1b1b1;
+    --color-grey-light-2: #8d8d8d;
+    --color-grey-light-1: #7a7a7a;
+    --color-grey-light-3: #dddddd;
+    --color-grey-text: #313131;
+}
+
+$bp-largest: 75em;  //1200px
+$bp-large-3: 72.5em;  //1160px
+$bp-large-2: 68.75em;  //1100px
+$bp-large-1: 62.5em;  //1000px
+$bp-medium: 56.25em;  //1000px
+$bp-medium-3: 47.5em;  //760px
+$bp-medium-2: 43.75em;  //760px
+$bp-medium-1: 35.375em;  //566px
+$bp-small: 23.75em;  //380px
+
+html {
+    font-size: 62.5%;  //1rem=10px
+    font-family: 'Quicksand', sans-serif;
+
+    @media only screen and (max-width: $bp-large-2) {
+        font-size: 60%;  //1rem=9.6rem
+    }
+
+    @media only screen and (max-width: $bp-large-1) {
+        font-size: 56.25%;  //1rem=9rem
+    }
+
+    @media only screen and (max-width: $bp-medium-3) {
+        font-size: 53.125%;  //1rem=8.5rem
+    }
+
+    @media only screen and (max-width: $bp-medium-1) {
+        font-size: 50%;  //1rem=8rem
+    }
+}
+
+body {
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgba(120, 120, 133, .8), rgba(126, 126, 133, .8)), url(../img/backimage.jpeg);
+}
+
+.main {
+    padding: 0 3rem;
+    width: 80.5%;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large-3) {
+        padding: 0 1rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        padding: 0 1.5rem;
+        margin-bottom: 10rem;
+    }
+}
+
+
+
+

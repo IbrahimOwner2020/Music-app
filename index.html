@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;515;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css">
+    <title>Music App</title>
+</head>
+<body>
+    <div class="app">
+        <button class="close">
+            <div class="close-now">&nbsp;</div>
+            <div class="close-min">&nbsp;</div>
+            <div class="close-hide">&nbsp;</div>
+        </button>
+        <nav class="side-bar">
+            <div class="side-bar__top">
+                <div class="item">
+                    <a href="#" class="item__box">
+                        <i class="far fa-compass item__icon-1"></i>
+                        <span class="item__name-1">Browse</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="fas fa-microphone item__icon"></i>
+                        <span class="item__name">Podcast</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="far fa-image item__icon"></i>
+                        <span class="item__name">Album</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="far fa-user item__icon"></i>
+                        <span class="item__name">Artist</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="far fa-play-circle item__icon"></i>
+                        <span class="item__name">Video</span>
+                    </a>
+                </div>
+                <h3 class="side-bar__heading">MY MUSIC</h3>
+                <div class="item">
+                    <a href="#" class="item__box">
+                        <i class="far fa-clock item__icon"></i>
+                        <span class="item__name">Recently Played</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="far fa-heart item__icon"></i>
+                        <span class="item__name">Favorite Songs</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <i class="far fa-file item__icon"></i>
+                        <span class="item__name">Local Files</span>
+                    </a>
+                </div>
+                <h3 class="side-bar__heading side-bar__heading-new">
+                    <span>PLAYLISTS</span> 
+                    <i class="fas fa-plus side-bar__heading__icon"></i>
+                </h3>
+                <div class="item">
+                    <a href="#" class="item__box">
+                        <span class="item__name">My Daily Mix</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <span class="item__name">Beshi Shundor</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <span class="item__name">Maje maje huni</span>
+                    </a>
+                    <a href="#" class="item__box">
+                        <span class="item__name">Maje maje huni2</span>
+                    </a>
+                </div>
+            </div>
+            <div class="side-bar__centre"></div>
+            <div class="side-bar__bottom"></div>
+        </nav>
+        <main class="main">
+            <nav class="top-nav">
+                <div class="search">
+                    <i class="fas fa-search search__icon"></i>
+                    <input type="search" name="search" id="search" placeholder="Search for music,videos etc.">
+                </div>
+                <div class="user">
+                    <div class="user__id">
+                        <img src="img/man10.jpeg" alt="user photo" class="user__photo">
+                        <div class="user__name">
+                            <span class="user__name-name">Wahab</span>
+                            <span class="user__name-email">Wahab2k19@<span class="user__name-account"><i class="fas fa-sort-down icon__account"></i></span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="notification">
+                    <i class="fas fa-bell notification__icon"></i>
+                    <span class="notification__no">5</span>
+                </div>
+            </nav>
+            <div class="div-new">
+                <div class="grid-layout">
+                    <div class="grid__pic-big">
+                        <h1 class="primary-heading">
+                            <span class="primary-heading primary-heading__1">Complementary</span><br>
+                            Colors <br>Hasley
+                        </h1>
+                        <div class="head">
+                            <div class="head__left">
+                                <div class="head__left-play">
+                                    <i class="fas fa-play head__left-play__icon"></i>
+                                    <span>Now Playing</span>
+                                </div>
+                                <div class="head__left-like">
+                                    <i class="far fa-heart head__left-like__icon"></i>
+                                </div>
+                            </div>
+                            <div class="head__right">
+                                <span class="head__right-top">Up Next</span>
+                                <span class="head__right-bottom">Colors-Audien Remix</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__pic-small grid__pic-small1">
+                        <div class="grid__skew grid__skew1">
+                            <div class="grid__skew__item1">Charts</div>
+                        </div>
+                    </div>
+                    <div class="grid__pic-small grid__pic-small2">
+                        <div class="grid__skew grid__skew2">
+                            <div class="grid__skew__item2">New releases</div>
+                        </div>
+                    </div>
+                    <div class="grid__pic-small grid__pic-small3">
+                        <div class="grid__skew grid__skew1">
+                            <div class="grid__skew__item1">Discover</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-layout">
+                    <div class="title">
+                        <h2 class="title__head">Top Charts</h2>
+                        <a href="#" class="title__link">Show more</a>
+                    </div>
+                    <div class="list">
+                        <div class="list-item">
+                            <i class="far fa-heart list-item__icon-like"></i>
+                            <div class="list-item__photo">
+                                <img src="img/man2.jpeg" alt="music" class="list-item__photo-photo">
+                                <i class="fas fa-play list-item__photo-icon"></i>
+                            </div>
+                            <div class="song">
+                                <span class="song-name">Take me down</span>
+                                <span class="song-artist">Troye Silva</span>
+                            </div>
+                            <span class="duration">4:17</span>
+                            <i class="fas fa-align-left beat"></i>
+                        </div>
+                        <div class="list-item">
+                            <i class="far fa-heart list-item__icon-like"></i>
+                            <div class="list-item__photo">
+                                <img src="img/man9.jpeg" alt="music" class="list-item__photo-photo">
+                                <i class="fas fa-play list-item__photo-icon"></i>
+                            </div>
+                            <div class="song">
+                                <span class="song-name">All We Got</span>
+                                <span class="song-artist">Chance The Rapper</span>
+                            </div>
+                            <span class="duration">4:24</span>
+                            <i class="fas fa-align-left beat"></i>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-heart list-item__icon-like"></i>
+                            <div class="list-item__photo">
+                                <img src="img/girl2.jpeg" alt="music" class="list-item__photo-photo">
+                                <i class="fas fa-play list-item__photo-icon"></i>
+                            </div>
+                            <div class="song">
+                                <span class="song-name">Believer-Live</span>
+                                <span class="song-artist">Imagine Dragons</span>
+                            </div>
+                            <span class="duration">13:00</span>
+                            <i class="fas fa-align-left beat"></i>
+                        </div>
+                        <div class="list-item">
+                            <i class="fas fa-heart list-item__icon-like"></i>
+                            <div class="list-item__photo">
+                                <img src="img/girl4.jpeg" alt="music" class="list-item__photo-photo">
+                                <i class="fas fa-play list-item__photo-icon"></i>
+                            </div>
+                            <div class="song">
+                                <span class="song-name">In The Name Of Love</span>
+                                <span class="song-artist">Martin Garrix</span>
+                            </div>
+                            <span class="duration">3:19</span>
+                            <i class="fas fa-align-left beat"></i>
+                        </div>
+                        <div class="list-item">
+                            <i class="far fa-heart list-item__icon-like"></i>
+                            <div class="list-item__photo">
+                                <img src="img/boy.jpeg" alt="music" class="list-item__photo-photo">
+                                <i class="fas fa-play list-item__photo-icon"></i>
+                            </div>
+                            <div class="song">
+                                <span class="song-name">Never Be Like You</span>
+                                <span class="song-artist">Flume</span>
+                            </div>
+                            <span class="duration">3:53</span>
+                            <i class="fas fa-align-left beat"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="last">
+                <div class="last__left">
+                    <span class="description">Your Daily Mix</span>
+                    <div class="type">
+                        <div class="type__head">Album</div>
+                        <div class="type__icon">
+                            <i class="fas fa-chevron-left type__icon-icon"></i>
+                            <i class="fas fa-chevron-right type__icon-icon type__icon-icon1"></i>
+                        </div>
+                    </div>
+                    <div class="new">
+                        <div class="new__item new__item-1">
+                            <i class="fas fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Melodrama</h3>
+                                <span class="new__item-song">Lorde</span>
+                            </div>
+                        </div>
+                        <div class="new__item new__item-2">
+                            <i class="far fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Divide</h3>
+                                <span class="new__item-song">Ed Sheran</span>
+                            </div>
+                        </div>
+                        <div class="new__item new__item-3">
+                            <i class="far fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Colors</h3>
+                                <span class="new__item-song">Hasley</span>
+                            </div>
+                        </div>
+                        <div class="new__item new__item-4">
+                            <i class="far fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Drake</h3>
+                                <span class="new__item-song">Gowewe</span>
+                            </div>
+                        </div>
+                        <div class="new__item new__item-5">
+                            <i class="far fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Ibrahim</h3>
+                                <span class="new__item-song">Kari Joe</span>
+                            </div>
+                        </div>
+                        <div class="new__item new__item-6">
+                            <i class="far fa-heart new__item-icon"></i>
+                            <div class="new__item-div">
+                                <h3 class="new__item-head">Jay-z</h3>
+                                <span class="new__item-song">Lorde</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="last__right">
+                    <span class="description">Featured EP.</span>
+                    <div class="type">
+                        <div class="type__head">Podcasts</div>
+                        <div class="type__icon">
+                            <i class="fas fa-chevron-left type__icon-icon"></i>
+                            <i class="fas fa-chevron-right type__icon-icon type__icon-icon1"></i>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right__one">
+                            <div class="head__left-play head__left-play-now">
+                                <i class="fas fa-play head__left-play__icon"></i>
+                                <span>Now Play</span>
+                            </div>
+                        </div>
+                        <div class="right__two">
+                            <div class="head__left-play head__left-play-now">
+                                <i class="fas fa-play head__left-play__icon"></i>
+                                <span>Now Play</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+            <div class="play">
+                <div class="play__now">
+                    <img src="img/girl3new.jpeg" alt="now playing" class="play__now-img">
+                    <div class="play__now-name">
+                        <span class="play__now-name-song">Colors-<br>Stripped</span>
+                        <span class="play__now-name-singer">Hasley</span>
+                    </div>
+                </div>
+                <div class="play__status">
+                    <div class="play__status_top">
+                        <div class="play__status_top-icons">
+                            <i class="fas fa-random play__status_top-icons-now play__status_top-icons-now-1"></i>
+                            <i class="fas fa-step-backward play__status_top-icons-now play__status_top-icons-now-2"></i>
+                            <i class="far fa-pause-circle play__status_top-icons-now play__status_top-icons-now-3"></i>
+                            <i class="fas fa-step-forward play__status_top-icons-now play__status_top-icons-now-2"></i>
+                            <i class="fas fa-sync play__status_top-icons-now play__status_top-icons-now-1"></i>
+                            <div class="volume">
+                                <button class="volume__btn"><i class="fas fa-volume-up volume__icon"></i></button>
+                                <div class="volume__bar">
+                                    <div class="volume__bar-quantity">&nbsp;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play__status-bottom">
+                        <span class="play__status-bottom-time">1:33</span>
+                        <div class="play__status-bottom-bar">
+                            <div class="play__status-bottom-bar-new">&nbsp;</div>
+                        </div>
+                        <span class="play__status-bottom-time">4:03</span>
+                    </div>
+                </div>
+                <div class="play__next">
+                    <span class="play__next-top">Up Next</span>
+                    <span class="play__next-bottom">Colors-Audien Remix</span>
+                </div>
+            </div>      
+        </main>
+    </div>
+</body>
+</html>

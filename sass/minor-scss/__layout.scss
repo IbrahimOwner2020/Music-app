@@ -1,0 +1,401 @@
+.app {
+    background-color: #fff;
+    margin: 5rem auto;
+    position: relative;
+    padding-top: 3.5rem;
+    border-radius: 2px;
+    display: flex;
+    max-width: 1200px;
+
+    @media only screen and (max-width: $bp-largest) {
+        margin: 0;
+    }
+}
+
+.top-nav {
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    flex-wrap: wrap;
+}
+
+.div-new {
+    display: flex;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-medium-2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.grid-layout {
+    width: 60%;
+    margin-right: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 140px) 110px;
+    grid-row-gap: 2.5rem;
+    grid-column-gap: 1.5rem;
+
+    @media only screen and (max-width: $bp-large-3) {
+        grid-column-gap: 1rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-medium-2) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.list-layout {
+    width: 40%;
+
+    @media only screen and (max-width: $bp-medium-2) {
+        display: none;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+.last {
+    display: flex;
+    margin-top: 3rem;
+
+    @media only screen and (max-width: $bp-medium-2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__left {
+        width: 50%;
+        margin-right: 3rem;
+
+        @media only screen and (max-width: $bp-large-3) {
+            margin-right: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 100%;
+            margin-top: 2rem;
+            margin-right: 0;
+        }
+    }
+
+    &__right {
+        width: 50%;
+
+        @media only screen and (max-width: $bp-medium-2) {
+            width: 100%;
+            margin-top: 3rem;
+        }
+    }
+}
+
+.new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 130px);
+    grid-column-gap: 3rem;
+    grid-row-gap: 2rem;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-large-3) {
+        grid-row-gap: 1rem;
+        grid-column-gap: 1.5rem;
+    }
+
+    &__item {
+        border-radius: .7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+
+        &-div {
+            backdrop-filter: blur(18px);
+            overflow: hidden;
+            padding: 1rem 1rem;
+            border-bottom-left-radius: .7rem;
+            border-bottom-right-radius: .7rem;
+            width: 100%;
+            color: #fff;
+        }
+
+        &-head {
+            margin-bottom: .2rem;
+        }
+
+        &-icon {
+            align-self: flex-end;
+            padding: .6rem;
+            margin: .5rem .8rem auto 0;
+            background-color: rgba(0, 0, 0, 0.644);
+            border-radius: 50%;
+            backdrop-filter: blur(15px);
+            color: var(--color-green-blue-2);
+            font-size: 1.2rem;
+        }
+
+
+
+        &-1 {
+            background-image: url(../img/woman.jpeg);
+            background-size: cover;
+            background-position: right;
+        }
+        &-2 {
+            background-image: url(../img/man4.jpeg);
+            background-size: cover;
+            background-position: bottom;
+        }
+        &-3 {
+            background-image: url(../img/girl3.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+        &-4 {
+            background-image: url(../img/girl6.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        &-5 {
+            background-image: url(../img/girl1.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+        &-6 {
+            background-image: url(../img/man5.jpeg);
+            background-size: cover;
+            background-position: top;
+        }
+    }
+}
+
+.right {
+    display: flex;
+    margin-top: 2rem;
+
+    &__one {
+        width: 50%;
+        margin-right: 2rem;
+        background-image: url(../img/girl1.jpeg);
+        background-size: cover;
+        background-position: top;
+        color: #fff;
+        height: 18rem;
+        border-radius: .7rem;
+        position: relative;
+    }
+
+    &__two {
+        width: 50%;
+        background-image: url(../img/heronew1.jpeg);
+        background-size: cover;
+        background-position: top;
+        color: #fff;
+        height: 18rem;
+        border-radius: .7rem;
+        position: relative;
+    }
+}
+
+
+.play {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 9rem;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(211, 211, 211));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bp-medium-2) {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__now {
+        display: flex;
+        margin-left: 2rem;
+
+        @media only screen and (max-width: $bp-small)  {
+            display: none;
+        }
+
+        &-img {
+            width: 5rem;
+            height: auto;
+            box-shadow: 0 1rem 2rem 0rem rgba(0, 0, 0, 0.644);
+            border-radius: .4rem;
+        }
+
+        &-name {
+            margin-left: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-song {
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 1;
+                color: var(--color-grey-text);
+            }
+
+            &-singer {
+                font-size: 1.1rem;
+                color: var(--color-grey-light-1);
+                margin-bottom: .3rem;
+            }
+        }
+    }
+
+    &__status {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        @media only screen and (max-width: $bp-medium-1) {
+            width: 70%;
+        }
+
+        @media only screen and (max-width: $bp-small) {
+            width: 95%;
+        }
+
+        &_top {
+            align-self: flex-end;
+            margin-bottom: 1.5rem;
+            margin-right: 7rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                align-self: flex-start;
+                margin-right: 0;
+                margin-left: 14rem;
+            }
+
+            @media only screen and (max-width: $bp-medium-2) {
+                align-self: flex-start;
+                margin-left: 9rem;
+            }
+
+            &-icons {
+                display: flex;
+                align-items: center;
+
+                &-now {
+                    font-size: 1.5rem;
+                    margin-right: 1.5rem;
+
+                    &-1 {
+                        color: var(--color-grey-light);
+                    }
+                    &-2 {
+                        color: var(--color-blue-light);
+                    }
+                    &-3 {
+                        color: var(--color-blue-light);
+                        font-size: 4rem;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &-time {
+                margin: 0 .8rem;
+                color: var(--color-grey-text);
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+
+            &-bar {
+                width: 70%;
+                height: 3px;
+                border-radius: 10px;
+                background-color: var(--color-grey-light);
+
+                &-new {
+                    height: 100%;
+                    width: 33.333%;
+                    background-color: var(--color-blue-light);
+                }
+            }
+        }
+    }
+
+    &__next {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2.5rem;
+
+        @media only screen and (max-width: $bp-medium-2) {
+            display: none;
+        }
+
+        &-top {
+            font-size: 1.1rem;
+            color: var(--color-grey-light-1);
+            margin-bottom: .8rem;
+        }
+
+        &-bottom {
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1;
+            color: var(--color-grey-text);
+        }
+    }
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+
+    &__btn {
+        border: none;
+        background-color: transparent; 
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+        color: var(--color-grey-light-1);       
+    }
+
+    &__bar {
+        width: 6rem;
+        height: 3px;
+        background-color: var(--color-grey-light);
+
+        @media only screen and (max-width: $bp-largest) {
+            display: none;
+        }
+
+        &-quantity {
+            height: 100%;
+            width: 80%;
+            background-color: var(--color-grey-light-1);
+        }
+    }
+}
+
+@media only screen and (max-width: $bp-largest) {
+    .volume__btn:focus + .volume__bar {
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: none;
+    }
+}
